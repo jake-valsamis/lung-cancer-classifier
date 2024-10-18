@@ -1,0 +1,9 @@
+{
+	"version": 1,
+	"attached_datasets": [
+		{
+			"id": "18646fb9-799f-427d-8e8c-b455d5cdcb06",
+			"mount": "lung-cancer-dataset"
+		}
+	]
+}

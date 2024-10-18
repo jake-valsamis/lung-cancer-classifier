@@ -1,0 +1,40 @@
+{
+	"version": 1,
+	"base_image": "codeocean/mambaforge3:22.11.1-4-ubuntu22.04",
+	"options": {
+		"registry_host_arg": true,
+		"git_ask_pass": true
+	},
+	"installers": {
+		"mamba": {
+			"packages": [
+				{
+					"name": "jupyterlab",
+					"version": "4.2.5"
+				}
+			]
+		},
+		"pip": {
+			"packages": [
+				{
+					"name": "mlflow",
+					"version": "2.17.0"
+				},
+				{
+					"name": "pandas",
+					"version": "2.2.3"
+				},
+				{
+					"name": "scikit-learn",
+					"version": "1.5.2"
+				},
+				{
+					"name": "xgboost",
+					"version": "2.1.1"
+				}
+			],
+			"options": {},
+			"pre_install_options": {}
+		}
+	}
+}

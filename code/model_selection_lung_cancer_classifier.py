@@ -47,7 +47,7 @@ import sklearn.model_selection
 # Constants
 TEST_SIZE = 0.2
 TRAIN_SPLITS = 3
-DATASET_URL = "/data/lung_cancer_dataset/survey-lung-cancer.csv"
+DATASET_URL = "/data/lung-cancer-dataset/survey-lung-cancer.csv"
 
 CLASSIFIERS_CONFIG = {
     "Logistic Regression": skl.linear_model.LogisticRegression(),
