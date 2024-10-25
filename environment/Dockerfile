@@ -1,4 +1,4 @@
-# hash:sha256:ad2bd91ea1488269f26f030bb42cf2018f26395c7bb474a1981c394ed2c3641d
+# hash:sha256:adb5d8f9c0c521af8969bbc69f69b004052034a5946053c27ac983b206fe6b35
 ARG REGISTRY_HOST
 FROM $REGISTRY_HOST/codeocean/mambaforge3:22.11.1-4-ubuntu22.04
 
@@ -10,10 +10,8 @@ COPY git-askpass /
 
 RUN mamba install -y \
         jupyterlab==4.2.5 \
+        mlflow==2.17.0 \
+        pandas==2.2.3 \
+        scikit-learn==1.5.2 \
+        xgboost==2.1.1 \
     && mamba clean -ya
-
-RUN pip install -U --no-cache-dir \
-    mlflow==2.17.0 \
-    pandas==2.2.3 \
-    scikit-learn==1.5.2 \
-    xgboost==2.1.1
