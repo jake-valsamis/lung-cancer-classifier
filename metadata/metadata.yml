@@ -1,2 +1,10 @@
 metadata_version: 1
 name: Lung Cancer Model Selection
+description: Capsule to train 7 decision tree classifiers to predict lung cancer diagnosis
+  based on patient characteristics. Training and performance is tracked in mlflow.
+tags:
+- lung cancer
+- MLFlow
+- Machine Learning
+authors:
+- name: Dror Hilman
